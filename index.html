@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Avery Pickard</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://www.linkedin.com/in/avery-pickard-a00495360/">LinkedIn</a>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="/Users/averypickard/Documents/Portfolio/pics/IMG_2859.jpeg" alt="Self portrait of me" class="self-portrait" />
+      <p>Hi! I'm Avery Pickard, a recent graduate with a passion for software development, UX design and cloud computing. Please check out some of my previous work!</p>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>My Work</h2>
+    <div class="carousel">
+      <button class="carousel-btn prev">&#10094;</button>
+      <div class="carousel-track-container">
+        <ul class="carousel-track">
+          <li class="carousel-slide current-slide"><img src="/Users/averypickard/Documents/Portfolio/pics/Speedcheck.png" alt="SpeedCheck - a Lean UX experiment creating an application for beginner speedrunners"></li>
+          <li class="carousel-slide"><img src="/Users/averypickard/Documents/Portfolio/pics/grade.png" alt="SpeedCheck at GradEx"></li>
+          <li class="carousel-slide"><img src="/Users/averypickard/Documents/Portfolio/pics/Screenshot 2025-07-31 at 15.27.48.png" alt="Figma prototype designs for a mobile university application"></li>
+          <li class="carousel-slide"><img src="/Users/averypickard/Documents/Portfolio/pics/Screenshot 2025-07-31 at 15.35.19.png" alt="Figma prototypes for the smartwatch port of the unviersity application "></li>
+        </ul>
+
+      <!---carousel-->
+        <div class="carousel-caption-bar">
+          <p id="carousel-caption"></p>
+        </div>
+      </div>
+      <button class="carousel-btn next">&#10095;</button>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form" class="contact-form" action="mailto:averypickard@protonmail.com" method="POST" enctype="text/plain" novalidate>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      <small class="error-message" id="name-error"></small>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <small class="error-message" id="email-error"></small>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <small class="error-message" id="message-error"></small>
+
+      <button type="submit">Send Message</button>
+    </form>
+ <p id="form-confirmation" class="confirmation-message" style="display: none;">
+    Thank you! Your message has been prepared.<br />
+  <a href="#" id="mailto-link">Click here to send via email</a>
+</p>
+
+
+    
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Avery Pickard. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
